@@ -1,0 +1,237 @@
+body
+{
+    background-image: url("background6_light.jpg");
+    background-size: 150px;
+}
+
+.img
+{
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 375px;
+    border-radius: 1000px;
+    float: left;
+    box-shadow: 20px 10px 50px 0px #eda130,
+                -20px -10px 50px 0px #eda130;
+}
+
+.a
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255),
+                3px 2px rgb(144, 229, 34),
+                5px 5px 2px rgb(255, 255, 255),
+                7px 7px 5px rgb(144, 229, 34);
+}
+
+.about
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255),
+                3px 2px rgb(255, 255, 255),
+                5px 5px 2px rgb(255, 255, 255),
+                7px 7px 5px rgb(255, 255, 255);
+    padding: 100px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255),
+                3px 2px rgb(144, 229, 34),
+                5px 5px 2px rgb(255, 255, 255),
+                7px 7px 5px rgb(144, 229, 34);
+}
+
+.card-list 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 100%;
+    margin-left: 0.5%;
+    margin-top: 65px;
+    padding: 5px;
+    gap: 100px;
+    text-align: center;
+}
+
+.card-list .card-item 
+{
+    background: radial-gradient(circle 200px, rgb(238, 208, 41), rgb(228, 170, 24), rgb(255, 166, 0), rgb(255, 119, 0));
+    padding: 30px;
+    border-radius: 80px;
+    box-shadow: 10px 10px 1px rgba(68, 255, 0, 0.04),
+                12px 12px 1px rgba(68, 255, 0, 0.04),
+                14px 14px 1px rgba(68, 255, 0, 0.04);
+    cursor: pointer;
+    border: 10px double rgb(0, 0, 0);
+    transition: border 0.5s ease;
+    text-align: center;
+}
+
+.card-list .card-item:hover 
+{
+    border: 10px solid #ffffff;
+}
+
+.card-list span 
+{
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 5px;
+    padding: 0px 10px;
+    font-size: 10px;
+    border-radius: 10px;
+    font-weight: 1000;
+}
+
+.card-list .c 
+{
+    background-color: #ff0000; 
+    font-family: cursive;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.card-item h3 
+{
+    color: #59ff00;
+    text-shadow: 3px 3px 5px #000000,
+                5px 5px 10px #000000,
+                7px 7px 10px #000000;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+}
+
+.arrow
+{
+    background-image: url("arrow1.png");
+    transform: rotate(-15deg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+    transition: 0.2s ease;
+}
+
+.arrow:hover
+{
+    background-image: url("arrow2_light.png");
+    transform: rotate(0deg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+
+.b
+{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-decoration: underline;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-right: 10%;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255),
+                3px 2px rgb(144, 229, 34),
+                5px 5px 2px rgb(255, 255, 255),
+                7px 7px 5px rgb(144, 229, 34);
+}
+
+.d
+{
+    color: aliceblue;
+    text-align: center;
+    font-size: 45px;
+    margin-right: 30%;
+    margin-left: 30%;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px black,
+                3px 2px rgb(255, 0, 0),
+                5px 5px 2px rgb(0, 0, 0),
+                7px 7px 5px rgb(0, 119, 255);
+    backdrop-filter: blur(8px);
+}
+
+.git
+{
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.mail
+{
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.insta
+{
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.fb
+{
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.button
+{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    float: right;
+    box-shadow: 3px 3px 3px #ff0000;
+    width: 80px;
+    height: 30px;
+    margin: 15px;
+    margin-top: 13px;
+}
+
+.e
+{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+                3px 2px rgb(0, 0, 0),
+                5px 5px 2px rgb(0, 0, 0),
+                7px 7px 5px rgb(0, 0, 0);
+    background-color: rgb(255, 136, 0);
+    padding: 10px 0px 10px 10px;
+    font-size: 30px;
+}

@@ -1,0 +1,113 @@
+body
+{
+    background-color: rgb(234, 213, 172);
+    margin: 0px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
+.flexbox
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar
+{
+    position: sticky;
+    align-self: start;
+    top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 20px;
+    width: 18%;
+    float: left;
+    border: 18px double rgb(0, 0, 0);
+    margin: 0.5%;
+}
+
+.main
+{
+    width: 82%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 9px solid rgb(0, 0, 0);
+    margin: 0.5%;
+}
+
+.menu
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float: right;
+}
+
+.item
+{
+    color: rgb(255, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.menu a
+{
+    color: rgb(255, 0, 0);
+}
+
+.heading
+{
+    color: rgb(217, 123, 9);
+    font-family: 'Gill Sans';
+    font-size: 30px;
+    border: 5px double rgb(255, 204, 0);
+    text-align: center;
+    margin: 1%;
+}
+
+.content
+{
+    text-align: center;
+    float: center;
+    color: rgb(160, 59, 197);
+    margin: auto;
+}
+
+.button
+{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    float: right;
+    box-shadow: 3px 3px 3px #ff0000;
+    width: 80px;
+    height: 30px;
+    margin: 15px;
+    margin-top: 13px;
+}
+
+.e
+{
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+                3px 2px rgb(0, 0, 0),
+                5px 5px 2px rgb(0, 0, 0),
+                7px 7px 5px rgb(0, 0, 0);
+    background-color: rgb(255, 136, 0);
+    padding: 10px 0px 10px 10px;
+    font-size: 30px;
+}
+
+table, th
+{
+    border: 2px solid;
+    margin: 10px;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+a
+{
+    color: rgb(160, 59, 197);
+}

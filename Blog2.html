@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Blog
+        </title>
+        
+        <link rel="stylesheet" href="Blog2.css">
+
+        <script>
+            document.addEventListener
+            (
+                'DOMContentLoaded', function () 
+                {
+                    // Check if 'clickCount2' exists in local storage
+                    if (localStorage.getItem('clickCount2') === null) 
+                    localStorage.setItem('clickCount2', 0);
+        
+                    // Display the initial click count
+                    updateNumLikes2();
+        
+                    // Get the button element
+                    var likes2 = document.getElementById('likes2');
+        
+                    // Attach a click event listener to the button
+                    likes2.addEventListener
+                    (
+                        'click', function () 
+                        {
+                            // Increment the click count in local storage
+                            var currentClickCount2 = parseInt(localStorage.getItem('clickCount2'));
+                            localStorage.setItem('clickCount2', currentClickCount2 + 1);
+        
+                            // Update the click count display
+                            updateNumLikes2();
+                        }
+                    );
+        
+                    // Function to update the click count display
+                    function updateNumLikes2() 
+                    {
+                        var NumLikes2 = document.getElementById('NumLikes2');
+                        NumLikes2.textContent = localStorage.getItem('clickCount2');
+                    }
+                }
+            );
+          </script>
+    </head>
+
+    <body>
+        <div class="Blog2">
+            <h1>
+                The Unparalleled Importance of Sports in Life
+            </h1>
+
+            <h2>
+                Sports have been an integral part of human civilization for centuries, transcending cultural, geographical, and societal boundaries. 
+                Beyond the thrill of competition and the joy of victory, sports play a pivotal role in shaping individuals and communities. The 
+                importance of sports in life extends far beyond the playing field, influencing physical health, mental well-being, social cohesion, 
+                and personal development.
+            </h2>
+            
+            <h2>
+                Physical Health:
+            </h2>
+            <h3>
+                Regular participation in sports is a cornerstone of a healthy lifestyle. Engaging in physical activities promotes cardiovascular 
+                health, strengthens muscles and bones, and contributes to overall fitness. The obesity epidemic and sedentary lifestyles prevalent 
+                in modern society highlight the need for sports as a means of combating health issues. From reducing the risk of chronic diseases to 
+                enhancing coordination and flexibility, sports are a holistic approach to physical well-being.
+            </h3>
+
+            <h2>
+                Mental Well-being:
+            </h2>
+            <h3>
+                Sports are not only a workout for the body but also a workout for the mind. Physical activity releases endorphins, which are known as 
+                "feel-good" hormones that alleviate stress, anxiety, and depression. Team sports, in particular, foster camaraderie and a sense of belonging, 
+                providing emotional support and a platform for social interaction. Additionally, the discipline, focus, and resilience developed through 
+                sports contribute to a positive mindset that can be applied to various aspects of life.
+            </h3>
+
+            <h2>
+                Character Development:
+            </h2>
+            <h3>
+                Participation in sports instills essential values and traits that are fundamental to personal development. Athletes learn the importance of 
+                discipline, dedication, perseverance, and teamwork. Facing challenges, both on and off the field, builds resilience and mental toughness. 
+                The lessons learned through wins and losses, success and failure, contribute to the formation of a well-rounded and adaptable individual.
+            </h3>
+
+            <h2>
+                Social Skills and Community Building:
+            </h2>
+            <h3>
+                Sports act as a unifying force, bringing people together irrespective of age, gender, or background. Team sports, in particular, promote 
+                collaboration, communication, and mutual respect among teammates. Sports events and competitions provide a platform for communities to come 
+                together, fostering a sense of belonging and shared identity. This communal aspect of sports strengthens social bonds and promotes a culture 
+                of inclusivity.
+            </h3>
+
+            <h2>
+                Lifelong Learning:
+            </h2>
+            <h3>
+                Engaging in sports fosters a lifelong love for learning. Athletes continuously strive for improvement, setting and achieving goals, and 
+                adapting to evolving challenges. Whether it's refining skills, understanding strategy, or adapting to different opponents, the learning 
+                experiences in sports translate to valuable life skills applicable in various contexts.
+            </h3>
+
+            <h2>
+                The importance of sports in life is multifaceted, encompassing physical health, mental well-being, character development, social skills, and 
+                a commitment to lifelong learning. As we navigate the complexities of the modern world, the timeless lessons and benefits derived from sports 
+                continue to be a beacon of positivity. Whether as a participant or a spectator, embracing the world of sports enriches lives, promotes 
+                well-being, and contributes to the overall betterment of individuals and society as a whole.
+            </h2>
+        </div>
+
+        <button id="likes2">
+            <img src="like1.png">
+        </button>
+        <span id="NumLikes2"></span>
+
+        <div class="com">
+            <br>Comments
+        </div>
+
+        <div>
+            <br>
+            <textarea id="commentInput" placeholder="Type your comment..."></textarea>
+            <button id="comButton" onclick="saveComment()">Save Comment</button>
+        </div>
+
+        <div id="commentList"></div>
+
+        <script>
+            function saveComment() 
+            {
+                var commentInput = document.getElementById('commentInput');
+                var commentText1 = commentInput.value;
+
+                if (commentText1.trim() !== '') 
+                {
+                    var existingComments = JSON.parse(localStorage.getItem('comments2')) || [];
+                    existingComments.push(commentText1);
+                    localStorage.setItem('comments2', JSON.stringify(existingComments));
+                    commentInput.value = '';
+                    displayComments();
+                }
+            }
+
+            function displayComments() 
+            {
+                var commentList = document.getElementById('commentList');
+                commentList.innerHTML = '';
+                var existingComments = JSON.parse(localStorage.getItem('comments2')) || [];
+                existingComments.forEach
+                (
+                    function(comment) 
+                    {
+                        var commentElement = document.createElement('p');
+                        commentElement.textContent = comment;
+                        commentList.appendChild(commentElement);
+                    }
+                );
+            }
+
+            displayComments();
+        </script>
+
+    </body>
+</html>
